@@ -144,7 +144,7 @@
 
   const getObj = name => objects.get(String(name));
 
-  class Easy3D {
+  class ga3d {
     getInfo() {
       const xyz = d => ({
         X: { type: Scratch.ArgumentType.NUMBER, defaultValue: d[0] },
@@ -153,7 +153,7 @@
       });
       const NAME = { type: Scratch.ArgumentType.STRING, defaultValue: 'box' };
       return {
-        id: 'easy3d',
+        id: 'ga3d',
         name: 'Easy 3D',
         color1: '#7B5CFF',
         blocks: [
@@ -285,5 +285,5 @@
     }
   }
 
-  Scratch.extensions.register(new Easy3D());
+  Scratch.extensions.register(new ga3d());
 })(Scratch);
